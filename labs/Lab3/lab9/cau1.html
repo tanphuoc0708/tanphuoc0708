@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .form-group{
+            width: 1200px;
+            height: 100vh;
+            margin: auto;
+            position: relative;
+            background-color: #f1f1f1f1;
+        }
+        input{
+            outline: none;
+            border-bottom: 1px solid #ccc;
+            font-size: 15px;
+            margin-bottom: 10px;
+            padding: 1px 10px;
+        }
+        .btn{
+            display: block;
+            width: 10%;
+            color: white;
+            background-color: gainsboro;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-group">
+        <form action="#">
+            <label for="name"><b>User Name:</b></label><br>
+            <input type="text" required id="name"><br>
+            <label for="pass"><b>Password:</b></label><br>
+            <input type="password" required id="pass"><br>
+            <input type="checkbox">
+            <label for="#"><b>Remember me?</b></label>
+            <hr>
+            <input type="button" value="Login" class="btn">
+        </form>
+    </div>
+</body>
+</html>

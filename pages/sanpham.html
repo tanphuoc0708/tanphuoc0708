@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1200px;
+            height: auto;
+            background-color: #1149;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            font-variant: small-caps;
+        }
+
+        header img {
+            width: 100%;
+            height: 255px;
+
+        }
+
+        .login {
+            width: 100%;
+            position: absolute;
+            border-bottom-left-radius: 30px;
+            box-shadow: 0 0 15px orangered;
+            padding-left: 10px;
+            background-color: rgb(96, 203, 222);
+            color: orangered;
+        }
+
+        .login:hover {
+            color: orangered;
+            background-color: yellow;
+        }
+
+        nav {
+            width: 100%;
+            height: 50px;
+        }
+
+        .main.content {
+            width: 100%;
+            height: auto;
+            background-color: white;
+        }
+
+        article {
+            width: 70%;
+            height: 500px;
+            float: left;
+            background-color: white;
+        }
+
+        aside {
+            width: 30%;
+            height: 500px;
+            background-color: #f1f1f1f1;
+            float: right;
+        }
+
+        aside img {
+            width: 100%;
+        }
+
+        aside a:hover {
+            color: red;
+        }
+
+        .menu {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu>ul {
+            background-color: orangered;
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        .menu>ul>li {
+            display: inline-block;
+            line-height: 50px;
+            width: 20%;
+            color: white;
+        }
+
+        .menu a {
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu a:hover {
+            background-color: orangered;
+            color: yellow;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            background-color: wheat;
+            text-align: center;
+        }
+
+        h2 {
+            color: red;
+            text-align: center;
+        }
+
+        .box-news {
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            width: 100%;
+            height: auto;
+        }
+
+        .box-news-items {
+            width: 98%;
+            height: 150px;
+            border: 1px solid blue;
+            box-shadow: 5px 2px gainsboro;
+            margin: 5px 10px;
+            border-radius: 10px;
+        }
+
+        .box-news-items img {
+            width: 170px;
+            height: 150px;
+            margin: 0;
+            float: left;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+
+        .news-content {
+            width: 650px;
+            height: 150px;
+            float: left;
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(34, 219, 219);
+            text-align: center;
+        }
+
+        .title-news a {
+            text-decoration: none;
+        }
+
+        .title-news a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        .text-content {
+            text-align: justify;
+            margin-top: 20px;
+            padding: 5px;
+        }
+
+        table img {
+            width: 170px;
+            height: 150px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="login">
+                <a href="/pages/login.html">ĐĂNG NHẬP</a> |
+                <a href="">ĐĂNG KÝ</a>
+            </div>
+            <img src="/img/séction.jpg" alt="ANH">
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="/pages/sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="#">DỊCH VỤ</a></li>
+                <li><a href="#">GIẢI THƯỞNG</a></li>
+                <li><a href="#">TRANG TRÍ</a></li>
+                </li>
+            </ul>
+        </nav>
+        <h1>SẢN PHẨM</h1>
+        <div class="main-content">
+            <article>
+                <div class="box-news">
+                    <div class="box-news-items">
+                        <img src="/img/posche.jpg" alt="">
+                        <div class="news-content">
+                            <h3 class="title-news"><a href="">HÃNG PORCHE:</a>
+                            </h3>
+                            <p class="text-content">Porsche là một trong những thương hiệu siêu xe đắt nhất thế giới mà
+                                ai cũng mong muốn sở hữu. Lần
+                                đầu tiên được biết đến vào năm 1031, Porsche tập trung vào dòng xe thể thao, SUV và mui
+                                trần.</p>
+                        </div>
+                    </div>
+                    <div class="box-news-items">
+                        <img src="/img/ferrari.png" alt="">
+                        <div class="news-content">
+                            <h3 class="title-news"><a href="">HÃNG FERRARI: </a></h3>
+                            <p class="text-content">Ferrari là thương hiệu siêu xe có giá bán thuộc hàng đắt đỏ nhất
+                                trên thế giới. Thành lập năm
+                                2013, Ferrari đã nhanh tung ra các siêu phẩm thiết kế ấn tượng, tốc độ cao, khối động cơ
+                                vô cùng
+                                mạnh mẽ.</p>
+                        </div>
+                    </div>
+                    <div class="box-news-items">
+                        <img src="/img/bugatti.jpg" alt="">
+                        <div class="news-content">
+                            <h3 class="title-news"><a href="">HÃNG BUGATTI: </a></h3>
+                            <p class="text-content">Thương hiệu xe sang đến từ Pháp có 120 năm kinh nghiệm trong ngành.
+                                Nhiều siêu phẩm Bugatti đã
+                                góp mặt trong nhiều giải đua thế giới và mang về thắng lợi lớn.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <aside>
+                <img src="/img/sanpham.jpg" alt="">
+                <hr>
+                <h3><a href="">Liên doanh Vinamilk và Kido ra mắt nước giải khát tươi</a></h3>
+                <p>
+                    Kinh doanhHàng hóaSản phẩm mớiThứ sáu, 3/12/2021, 15:00 (GMT+7)
+                    Liên doanh Vinamilk và Kido ra mắt nước giải khát tươi
+                    Liên doanh Vibev giữa Vinamilk và Kido Group vừa chào hàng bộ đôi sữa bắp tươi và sữa đậu xanh tươi
+                    Oh Fresh ứng dụng công nghệ sản xuất Freshmax (Aseptic).
+
+                    Cuối tháng 11, hai sản phẩm này bắt đầu được phân phối rộng rãi tại Bách Hoá Xanh cùng với hơn
+                    300.000 điểm bán tương thích như siêu thị, minimart, cửa hàng tiện lợi, cửa hàng tạp hoá, quán
+                    ăn..., thu hút nhiều sự quan tâm và yêu thích từ người tiêu dùng.</p>
+            </aside>
+            <hr>
+        </div>
+        <h1>TIN NÓNG</h1>
+        <table class="box-news" border="1">
+            <tr>
+                <th><a href=""><img src="/img/Mercedes.jpg" alt="hinhanh"></a></th>
+                <th><a href=""><img src="/img/tinnong2.jpg" alt="hinhanh"></a></th>
+                <th><a href=""><img src="/img/tinnong3.jpg" alt="hinhanh"></a></th>
+            </tr>
+            <tr>
+                <th><a href="" class="title-news">'Mercedes bị 330.000 chủ xe tố gắn thiết bị gian lận khí thải</a></th>
+                <th><a href="" class="title-news">Thị trường ôtô Việt Nam tăng trưởng cao thứ hai Đông Nam Á</a></th>
+                <th><a href="" class="title-news">Hộp số sàn 5 cấp dần 'tuyệt chủng'</a></th>
+            </tr>
+            <tr>
+                <td class="text-content">Tổng cộng gần 300.000 đơn tố cáo chống lại Mercedes đã được gửi lên tòa án London cùng khoảng 35.000
+                    đơn khác đang được giải quyết, theo các luật sư tại phiên xử sơ bộ hôm 9/2.</td>
+                <td class="text-content">Lượng bán hơn nửa triệu chiếc của thị trường ôtô Việt Nam 2022 tương ứng mức tăng trưởng 32%, con số
+                    chỉ sau thị trường Malaysia trong khu vực.</td>
+                <td class="text-content">Thời kỳ 1990 cho đến nay, hộp số sàn 6 cấp đã xuất hiện với nhiều cải thiện, giúp xe tăng tốc mượt
+                    mà và cải thiện xăng hơn. Một số ít mẫu xe trang bị hộp số sàn 7 cấp, như Porsche 991 hay Ford
+                    Bronco. Vì vậy, hộp số sàn 5 cấp dần vắng bóng trên các mẫu xe mới.</td>
+            </tr>
+        </table>
+        <footer>
+            <p>
+            <p>Hotline: 0906 645 777 </p>
+            <p>Liên hệ quảng cáo: 0908 780 404</p>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
