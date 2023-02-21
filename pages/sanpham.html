@@ -16,7 +16,7 @@
         body {
             width: 1200px;
             height: auto;
-            background-color: #1149;
+            background-color: white;
             margin: 0 auto;
             padding: 0;
         }
@@ -33,20 +33,18 @@
             height: 255px;
 
         }
-
-        .login {
-            width: 100%;
-            position: absolute;
-            border-bottom-left-radius: 30px;
-            box-shadow: 0 0 15px orangered;
-            padding-left: 10px;
-            background-color: rgb(96, 203, 222);
-            color: orangered;
+        .login{
+            background-color: GRAY;
+            text-align: right;
+            margin: 0;
+            padding: 5px;
         }
-
-        .login:hover {
+        .login a{
+            width: 100%;
+            color: blue;
+        }
+        .login a:hover {
             color: orangered;
-            background-color: yellow;
         }
 
         nav {
@@ -73,7 +71,9 @@
             background-color: #f1f1f1f1;
             float: right;
         }
-
+        aside a{
+            text-decoration: none;
+        }
         aside img {
             width: 100%;
         }
@@ -89,7 +89,7 @@
         }
 
         .menu>ul {
-            background-color: orangered;
+            background-color: #f1f1f1f1;
             list-style-type: none;
             text-align: center;
             padding: 0;
@@ -113,10 +113,11 @@
         }
 
         h1 {
-            margin: 0;
-            padding: 0;
-            background-color: wheat;
+            margin: 2px;
+            padding: 10px;
+            background-color: #f1f1f1f1;
             text-align: center;
+            color: red;
         }
 
         h2 {
@@ -154,17 +155,23 @@
             width: 650px;
             height: 150px;
             float: left;
+            background-color: #f1f1f1f1;
         }
 
         footer {
             width: 100%;
             height: 50px;
-            background-color: rgb(34, 219, 219);
+            background-color: gray;
             text-align: center;
         }
-
+        .title-news{
+            padding: 10px;
+            margin: 5px;
+            text-decoration: none;
+        }
         .title-news a {
             text-decoration: none;
+            padding: 5px;
         }
 
         .title-news a:hover {
@@ -175,7 +182,8 @@
         .text-content {
             text-align: justify;
             margin-top: 20px;
-            padding: 5px;
+            padding: 10px;
+            color: black;
         }
 
         table img {
@@ -190,14 +198,14 @@
     <div class="container">
         <header>
             <div class="login">
-                <a href="/pages/login.html">ĐĂNG NHẬP</a> |
-                <a href="">ĐĂNG KÝ</a>
+                <a href="../pages/dangnhap.html">ĐĂNG NHẬP</a> |
+                <a href="../pages/dangky.html">ĐĂNG KÝ</a>
             </div>
             <img src="/img/séction.jpg" alt="ANH">
         </header>
         <nav class="menu">
             <ul>
-                <li><a href="/pages/sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="../pages/sanpham.html">SẢN PHẨM</a></li>
                 <li><a href="#">DỊCH VỤ</a></li>
                 <li><a href="#">GIẢI THƯỞNG</a></li>
                 <li><a href="#">TRANG TRÍ</a></li>
@@ -280,10 +288,8 @@
             </tr>
         </table>
         <footer>
-            <p>
-            <p>Hotline: 0906 645 777 </p>
-            <p>Liên hệ quảng cáo: 0908 780 404</p>
-            </p>
+            <p>Hotline: 0906 645 777 <br>
+            Liên hệ quảng cáo: 0908 780 404</p>
         </footer>
     </div>
 </body>
